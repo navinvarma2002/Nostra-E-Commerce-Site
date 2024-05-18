@@ -1,0 +1,329 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 10px;
+    background-color: white;
+}
+.Nostra-Logo{
+
+    padding-left: 10px;
+}
+
+.nav-links{
+
+    display: flex;
+    column-gap: 20px;
+    padding-right: 15px;
+
+}
+
+.nav-links a{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-links p:hovor{
+
+    cursor: pointer;
+}
+
+.navbar-menu-toggle{
+
+    display: none;
+    padding: 10px;
+}
+
+/*Side Navbar*/
+
+.side-navbar{
+
+    background-color:#566D8C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:-60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+    z-index: 1;
+    
+
+}
+
+.side-navbar-link{
+
+    margin-bottom: 30px;
+}
+
+.side-nav-links a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav-links a:hover{
+
+    text-decoration: underline;
+}
+ 
+
+/*Header*/
+
+.header{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.header-button{
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1d232c;
+    color: white;
+    border: none;
+
+}
+
+/*Service container*/
+ 
+.service{
+
+    padding: 20px;
+
+}
+
+.service-container-1{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div{
+
+    background-color: #8AA6A3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival{
+
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap ;
+}
+
+.new-arrival-container{
+
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: #1d232c;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    border-radius: 10px;
+    border: none;
+}
+
+.new-arrival button:hover{
+
+    cursor: pointer;
+   
+}
+
+.new-arrival img{
+
+    border-radius: 10px ;
+    
+}
+.News{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.News input{
+
+    padding:11px;
+    margin-bottom: 10px;
+    border: solid black 3px;
+    margin-top: 10px;
+    width:70vh;
+}
+
+.News button{
+
+    margin-top: 10px;
+    color:white;
+    background-color: #1d232c;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+.footer{
+
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1d232c;
+    color: #F2F4F7;
+    
+}
+.footer_mention{
+
+    margin-top: 15px;
+}
+
+.product-section{
+
+    margin-top: 20px;
+    
+}
+
+.product-search{
+
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+
+    border: none;
+    background-color: transparent;
+    width: 60%;
+}
+
+.product-search input{
+
+    outline: none;
+}
+
+/*Products*/
+
+
+.products{
+
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap ;
+    text-align: center;
+}
+.products-collection{
+
+    position: relative;
+    flex-basis: 20%;
+ 
+}
+
+.products-collection img{
+
+   border-radius: 10px;
+
+   height: 240px;
+   width: 180px;
+   
+ 
+}
+
+
+
+
+
+
+/* Media Query*/
+
+@media screen and (max-width:700px){
+
+    .navbar-menu-toggle{
+
+        display: block;
+    }
+
+    .nav-links{
+
+        display: none;
+    }
+
+    .header-image{
+
+        display: none;
+    }
+
+    .service-container-1{
+
+        display: none;
+    }
+    .service-container-2{
+
+        flex-direction: column;
+    }
+
+    .new-arrival button{
+
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 10px;
+        color: #1d232c;
+        position: absolute;
+        top: 50%;
+        left:20%;
+        border-radius: 10px;
+        border: none;
+    }
+    .side-navbar{
+       
+        height: 100vh;
+        background-color:#566D8C;
+        z-index: 1;
+    }
+    
+}
