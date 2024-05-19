@@ -248,7 +248,7 @@ body{
 /*Products*/
 
 
-.products{
+#products{
 
     display:flex;
     justify-content:space-between;
@@ -315,7 +315,7 @@ body{
         color: #1d232c;
         position: absolute;
         top: 50%;
-        left:20%;
+        left:32%;
         border-radius: 10px;
         border: none;
     }
@@ -325,5 +325,21 @@ body{
         background-color:#566D8C;
         z-index: 1;
     }
+    .new-arrival{
+
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap ;
+        text-align: center;
+    }
+    .new-arrival-container{
+
+        position: relative;
+        flex-basis: 100%;
+ 
+
+    }
+   
+    
     
 }
